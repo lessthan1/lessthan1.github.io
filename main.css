@@ -2,9 +2,10 @@ body {
   font-family: Georgia, Serif;
   text-align: center;
   color: #333;
+  font-size: 1.4em;
 }
 * {
-  line-height: 130%;
+  line-height: 140%;
 }
 div#container {
   display:inline-block;
