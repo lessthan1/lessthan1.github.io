@@ -3,15 +3,54 @@
   <head>
     <meta charset="utf-8">
     <title>60 versus 30 frames per second</title>
-    <link rel="stylesheet" type="text/css" href="/main.css">
+    <style type="text/css">
+    body {
+      font-family: Calibri, Helvetica, sans serif;
+      text-align: center;
+      color: #333;
+    }
+    * {
+      line-height: 140%;
+    }
+    div#container {
+      display:inline-block;
+      margin: auto;
+      width: 1280px;
+      text-align: left;
+    }
+    div.text {
+      width: 600px;
+      margin: 1em auto 1em auto;
+    }
+    .light { color: #999 }
+    </style>
   </head>
   <body>
     <div id="container">
-      <p>This page exists to display the difference between 60 and 30 frames per second.
-      Each video was recorded at 60 frames per second, then also re-encoded to 30 frames
-      per second to remove any differences between videos.</p>
+      <div class="text">
+        <h1>60FPS vs 30FPS</h1>
+        <p>This page exists to showcase the difference between 60FPS (frames per second) and
+        30FPS. Each game video is displayed twice, one for each framerate. I recommend watching the lower
+        framerate video before the higher because I believe it tends to make the difference even more
+        apparent.</p>
+
+        <p>Games:</p>
+        <ul>
+          <li><a href="#homefront">Homefront</a></li>
+          <li><a href="#dark-souls">Dark Souls</a></li>
+          <li><a href="#bf3">Battlefield 3</a></li>
+          <li><a href="#specops">Spec Ops: The Line</a></li>
+          <li><a href="#hitman">Hitman: Absolution</a></li>
+        </ul>
+        <p><b>Why?</b> Simply, to combat the notion that there is no difference between framerates
+        &gt;=30. I'll leave it up to you which you think is better; in my mind 60FPS is the 
+        clear winner.</p>
+        <p>Feel free to submit a <a href="https://github.com/lucky/lucky.github.io">pull request</a>
+        for this site, or contact me at jared.kuolt@gmail.com.</p>
+        <p class="light">Last updated on January 11, 2014</p>
+      </div>
       
-      <h1>Homefront</h1>
+      <h2 id="homefront">Homefront</h2>
       <p>30 FPS</p>
       <video width="1280" height="720" controls>
         <source src="http://60fps.s3.amazonaws.com/homefront-30fps.mp4" type="video/mp4"> 
@@ -21,7 +60,7 @@
         <source src="http://60fps.s3.amazonaws.com/homefront-60fps.mp4" type="video/mp4"> 
       </video>
       
-      <h2>Dark Souls</h2>
+      <h2 id="dark-souls">Dark Souls</h2>
       <p>30 FPS</p>
       <video width="1280" height="720" controls>
         <source src="http://60fps.s3.amazonaws.com/dark-souls-30fps.mp4" type="video/mp4"> 
@@ -31,7 +70,7 @@
         <source src="http://60fps.s3.amazonaws.com/dark-souls-60fps.mp4" type="video/mp4"> 
       </video>
       
-      <h2>Battlefield 3</h2>
+      <h2 id="bf3">Battlefield 3</h2>
       <p>30 FPS</p>
       <video width="1280" height="720" controls>
         <source src="http://60fps.s3.amazonaws.com/bf3-30fps.mp4" type="video/mp4"> 
@@ -41,7 +80,7 @@
         <source src="http://60fps.s3.amazonaws.com/bf3-60fps.mp4" type="video/mp4"> 
       </video>
       
-      <h1>Spec Ops: The Line</h1>
+      <h2 id="specops">Spec Ops: The Line</h2>
       <p>30 FPS</p>
       <video width="1280" height="720" controls>
         <source src="http://60fps.s3.amazonaws.com/specops-30fps.mp4" type="video/mp4"> 
@@ -51,7 +90,7 @@
         <source src="http://60fps.s3.amazonaws.com/specops-60fps.mp4" type="video/mp4"> 
       </video>
       
-      <h2>Hitman: Absolution</h2>
+      <h2 id="hitman">Hitman: Absolution</h2>
       <p>30 FPS</p>
       <video width="1280" height="720" controls>
         <source src="http://60fps.s3.amazonaws.com/hitman-30fps.mp4" type="video/mp4"> 
