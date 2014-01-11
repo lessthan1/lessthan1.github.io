@@ -1,7 +1,8 @@
 body {
   font-family: Georgia, Serif;
   text-align: center;
-  color: #333;
+  color: #999;
+  background-color: #000;
 }
 * {
   line-height: 140%;
