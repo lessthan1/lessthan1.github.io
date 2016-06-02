@@ -1,0 +1,35 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-grid/iron-grid.html"/>
+
+<dom-module id="paper-footer">
+  <template>
+    <style>
+      :host {
+        display: block;
+        float: left;
+        font-family: Roboto;
+        width:100%;
+      }
+      ::content .container paper-button {
+        font-family: Roboto Mono;
+        text-transform: inherit;        
+      }
+      
+    </style>
+    <br>
+      <div center style="padding-top:10px;padding-bottom:10px; color:#fff;letter-spacing: -0.03em; font-family: Roboto Mono;width:100%;background: #607d8b; background: {{background}};">
+        <div style="margin-top: 0px;margin-bottom:0px" class="container">
+        <a href="http://lessthan1.github.io" nodecoration><paper-button>http://lessthan1.github.io</paper-button></a> |
+        <a href="https://github.com/lessthan1/" nodecoration><paper-button>Repositories</paper-button></a> |
+        <a href="//polymer-project.org" nodecoration><paper-button>Polymer</paper-button></a>
+          </div>
+      </div>
+    
+  </template>
+  <script>
+    Polymer({
+      is: 'paper-footer',
+    });
+
+  </script>
+</dom-module>

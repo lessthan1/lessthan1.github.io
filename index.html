@@ -1,16 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>hi</title>
-    <link rel="stylesheet" href="/main.css" type="text/css">
-  </head>
-  <body>
-    <div id="container">
-      <div class="text">
-        <h1>I guess it is working</h1>
-        <p>remind me to edit this later</p>
+<html>
+<head>
+  <title>GitHub > 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <link rel="icon" type="image/x-icon" href="files/icon.png" />
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+  <link rel="import" href="bower_components/iron-icons/iron-icons.html"/>
+  <link rel="import" href="bower_components/iron-grid/iron-grid.html"/>
+  <link rel="import" href="bower_components/paper-styles/paper-styles.html"/>
+  <link rel="import" href="bower_components/paper-button/paper-button.html"/>
+  <link rel="import" href="bower_components/paper-card/paper-card.html"/>
+  <link rel="import" href="bower_components/iron-flex-layout/iron-flex-layout.html"/>
+  <link rel="import" href="bower_components/paper-styles/paper-styles.html" />
+  <link rel="import" href="bower_components/paper-tabs/paper-tabs.html"/>
+  <link rel="import" href="bower_components/app-layout/app-layout.html" />
+  <link rel="import" href="bower_components/app-layout/app-scroll-effects/app-scroll-effects.html" />
+  <link rel="import" href="files/style.html"/>
+  <link rel="stylesheet" href="files/style.html"/>
+  <link rel="import" href="elements/my-view.html" />
+  <link rel="import" href="elements/paper-footer.html" />
+  <link rel="import" href="elements/paper-container.html" />
+  <link rel="import" href="elements/my-repositories.html" />
+</head>
+<body fullbleed unresolved>
+  <my-view>
+    <iron-row demo-margin>
+      <h2 paper-title>Some useful links</h2>
+      <div class="col s12 m6 l6">
+        <style is="custom-style">paper-card {--paper-card-header-color: #fff;}</style>
+        <paper-card style="color:#333333;width:100%; margin-bottom:8px;" heading="GitHub" image="https://placeholdit.imgix.net/~text?txtsize=33&bg=171515&txtclr=000&txt=&w=%20700&h=294" class="white">
+          <div class="card-actions">
+            <a nodecoration href="https://github.com/"><paper-icon-button primaryInk src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"></paper-icon-button></a>
+          </div>
+        </paper-card>
       </div>
-    </div>
-  </body>
+      <div class="col s12 m6 l6">
+        <paper-card style="width:100%; margin-bottom:8px;" heading="" image="https://placeholdit.imgix.net/~text?txtsize=33&bg=E91E63&txtclr=fff&txt=Google%20Polymer&w=%20700&h=294">
+          <div class="card-actions">
+            <a href="https://www.polymer-project.org/1.0/" nounderline><paper-button primaryInk><iron-icon icon="save"></iron-icon></paper-button></a>
+          </div>
+        </paper-card>
+      </div>
+    </iron-row>
+    <br>
+    <h2 paper-title>My repositories</h2>
+    <my-repositories></my-repositories>
+    <h2 paper-title style="margin-bottom:0">More coming soon</h2>
+    <p>Cos Ive got other things to do.</p>
+  </my-view>
+  <link rel="import" href="files/scripts.html">
+</body>
 </html>

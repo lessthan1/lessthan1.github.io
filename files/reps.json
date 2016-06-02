@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Todo app",
+    "rephref": "//github.com/lessthan1/todo-app",
+    "webhref": "//lessthan1.github.io/todo-app",
+    "info": "My todo app which is probably never going to be finished",
+    "icon": "event",
+    "iconcolor": "#607d8b"
+  },
+  {
+    "name": "Just 'a test'",
+    "rephref": "//github.com/lessthan1/justatest",
+    "webhref": "//lessthan1.github.io/justatest",
+    "info": "This is where I TEST literaly EVERYTHING.",
+    "icon": "accessibility",
+    "iconcolor": "#ff5722"
+  },
+  {
+    "name": "Home page",
+    "rephref": "//github.com/lessthan1/lessthan1.github.io",
+    "webhref": "//lessthan1.github.io/",
+    "info": "Home page... not finished as well",
+    "icon": "home",
+    "iconcolor": "#1a237e"
+  }
+]
